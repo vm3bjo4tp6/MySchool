@@ -1,0 +1,16 @@
+.fix_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.invisible{
+    display: none;
+}
+.center{
+    margin: 0 auto;
+}
+.underline{
+    border-bottom: solid 0.125rem;
+}

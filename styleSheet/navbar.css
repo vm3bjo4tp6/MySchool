@@ -1,0 +1,110 @@
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav #main_nav{
+    margin-right: auto;
+}
+nav .navbar > li{
+    display: inline-block;
+}
+nav .login_button{
+    border: solid 0.125rem;
+    border-radius: 1.725rem;
+}
+nav .login_button .container{
+    padding: 0.25rem 1.125rem;
+}
+nav .login_button :hover{
+    border-radius: 1.725rem;
+    background-color: #ffcd00;
+    transition:background-color 2s;
+}
+
+@media(min-width: 1800px){
+    nav{
+        padding: 2.25rem 3.125rem;
+    }
+    nav .logo{
+        padding-right: 3.125rem;
+    }
+    nav #main_nav >li{
+        padding-right: 3.125rem;
+    }
+    nav #user_nav >li{
+        padding: 0 0.625rem;
+    }
+    nav .toggle_button{
+        display: none;
+    }
+}
+@media(min-width: 1200px) and (max-width: 1799.99px){
+    nav{
+        padding: 2.25rem 3.125rem;
+    }
+    nav .logo{
+        padding-right: 3.125rem;
+    }
+    nav #main_nav >li{
+        padding-right: 3.125rem;
+    }
+    nav #user_nav >li{
+        padding: 0 0.625rem;
+    }
+    nav .toggle_button{
+        display: none;
+    }
+}
+@media(min-width: 900px) and (max-width: 1199.99px){
+    nav{
+        padding: 2.25rem 3.125rem;
+    }
+    nav .logo{
+        padding-right: 3.125rem;
+    }
+    nav #main_nav >li{
+        padding-right: 3.125rem;
+    }
+    nav #user_nav >li{
+        padding: 0 0.325rem;
+    }
+    nav .toggle_button{
+        display: none;
+    }
+}
+@media(min-width: 600px) and (max-width: 899.99px){
+    nav{
+        padding: 2.25rem 3.125rem;
+    }
+    nav .logo{
+        margin-right: auto;
+    }
+    nav #main_nav{
+        display: none;
+    }
+    nav #user_nav >li{
+        padding: 0 0.325rem;
+    }
+    nav .toggle_button{
+        padding-left: 1.125rem;
+    }
+}
+@media(max-width: 599.99px){
+    nav{
+        padding: 2.25rem 1.125rem;
+    }
+    nav .logo{
+        margin-right: auto;
+    }
+    nav #main_nav{
+        display: none;
+    }
+    nav #user_nav{
+        display: none;
+    }
+    nav .toggle_button{
+        padding-left: 1.125rem;
+    }
+}

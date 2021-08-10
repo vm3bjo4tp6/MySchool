@@ -1,0 +1,86 @@
+header{
+    background-image: url("../resource/homepage.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media(min-width: 1800px){
+    header .masthead_heading{
+        padding-top: 26rem;
+        padding-left: 2rem;
+        font-size: 3.125rem;
+    }
+    header .masthead_subdeading{
+        padding: 4.125rem 64rem 15rem 2rem;
+        font-size: 2.125rem;
+    }
+}
+@media(min-width: 1200px) and (max-width: 1799.99px){
+    header{
+        background-image: url("../resource/homepage.jpg");
+    }
+    header .container{
+        padding: 0 2.25rem;
+    }
+    header .masthead_heading{
+        padding-top: 14rem;
+        font-size: 3.6rem;
+    }
+    header .masthead_subdeading{
+        padding-top: 8vh;
+        padding-right: 42.125rem;
+        font-size: 2.125rem;
+    }
+}
+@media(min-width: 900px) and (max-width: 1199.99px){
+    header{
+        background-image: url("../resource/homepage_mobile.jpg");
+    }
+    header .container{
+        padding: 0 2.25rem;
+    }
+    header .masthead_heading{
+        padding-top: 14rem;
+        font-size: 4.125rem;
+    }
+    header .masthead_subdeading{
+        padding-top: 3.125rem;
+        padding-right: 16.125rem;
+        font-size: 1.625rem;
+    }
+}
+@media(min-width: 600px) and (max-width: 899.99px){
+    header{
+        background-image: url("../resource/homepage_mobile.jpg");
+    }
+    header .container{
+        padding: 0 2.25rem;
+    }
+    header .masthead_heading{
+        text-align: center;
+        padding-top: 12.125rem;
+        font-size: 3.45rem;    
+    }
+    header .masthead_subdeading{
+        text-align: center;
+        padding-top: 1.125rem;
+        font-size: 2.125rem;
+    }
+}
+@media(max-width: 599.99px){
+    header{
+        background-image: url("../resource/homepage_mobile.jpg");
+    }
+    header .container{
+        padding: 0 1.25rem;
+    }
+    header .masthead_heading{
+        text-align: center;
+        padding-top: 8.125rem;
+        font-size: 1.45rem;
+    }
+    header .masthead_subdeading{
+        text-align: center;
+        padding-top: 1.125rem;
+    }
+}

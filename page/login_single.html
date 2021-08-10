@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleSheet/initialize.css">
+    <link rel="stylesheet" href="../styleSheet/navbar.css">
+    <link rel="stylesheet" href="../styleSheet/dropdown.css">
+    <link rel="stylesheet" href="../styleSheet/form.css">
+    <link rel="stylesheet" href="../styleSheet/function.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>註冊</title>
+</head>
+<body>
+    <nav class="fix_top">
+        <h1 class="logo">邁思庫</h1>
+        <ul class="navbar" id="main_nav">
+            <li class="dropdownlist">申請檔案
+                <ul class="dropdown_content">
+                    <li>搜尋</li>
+                    <li>分類</li>
+                    <li>分析</li>
+                    <li>自傳</li>
+                </ul>
+            </li>
+            <li class="dropdownlist">服務
+                <ul class="dropdown_content">
+                    <li>在校生指導</li>
+                    <li>專業顧問</li>
+                    <li>線上教學</li>
+                </ul>
+            </li>
+            <li>開通權限</li>
+            <li>常見問題</li>
+            <li class="dropdownlist">其他
+                <ul class="dropdown_content">
+                    <li>關於我們</li>
+                    <li>優勢</li>
+                    <li>相關新聞</li>
+                    <li>其他資源</li>
+                    <li>聯絡我們</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar invisible" id="user_nav">
+            <li class="nav-item">
+                <i class="fas fa-comments"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-folder"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-cog"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-user-circle"></i>
+            </li>
+        </ul>
+        <div class="login_button button">
+            <div class="container">
+                <span>
+                    <a href="login.html">註冊 | 登入</a>
+                </span>
+            </div>
+        </div>
+        <div class="toggle_button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="form">
+    <div class="container">        
+        <h3 class="title">
+            <a href="homepage.html">邁思庫</a>
+        </h3>
+        <ul class="nav">
+            <li class="underline">登錄</li>
+            <li>註冊</li>
+        </ul>
+        <form action="用戶管理.php" class="login_item">
+            <input class="form_item" type="text" id="username" name="username" placeholder="帳號" required autocomplete="off">
+            <input class="form_item" type="password" id="password" name="password" placeholder="密碼" required>
+            <div class="form_checkbox">
+            <input type="checkbox" id="save" name="save" value="remeber_login">
+            <label for="save"> 保持登入</label>
+            </div>
+            <input class="form_item" type="submit" value="登入" class="submit button" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
+            <h5 class="form_other">忘記密碼</h5>     
+        </form>
+        <form action="用戶管理.php" class="register-item invisible">
+            <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+            <div class="tab"></div>
+            <input type="text" id="username2" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password2" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+            <div class="tab"></div>            
+            <input type="submit" value="註冊" class="submit">
+            </form>           
+    </div>
+    </div>
+</body>
+</html>

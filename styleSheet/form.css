@@ -1,0 +1,106 @@
+body{
+    background-image: url(../resource/paper_w.jpg);
+}
+.form .title{
+    text-align: center;
+}
+.form .form_item{
+    width: 100%;
+    border: solid 0.125rem;
+    border-radius: 0.45rem;
+}
+@media(min-width: 1200px) and (max-width: 1799.99px){
+    .form .container{
+        width: 16.4rem;
+        padding: 1.8rem 1.5rem 1.2rem 1.5rem;
+    }
+    .form .title{
+        padding-bottom: 1.2rem;
+        font-size: 1.625rem;
+    }
+    .form .nav{
+        padding-bottom: 1rem;
+    }
+    .form .form_item, .form input[type="submit"]{
+        margin-bottom: 0.4rem;
+        padding: 0.3rem 1.225rem;
+    }
+    .form .form_checkbox{
+        margin-bottom: 0.4rem;
+        padding: 0 1.225rem;
+    }
+    .form .form_other{
+        text-align: center;
+    }
+}
+@media(min-width: 900px) and (max-width: 1199.99px){
+    .form .container{
+        width: 16.4rem;
+        padding: 1.8rem 1.5rem 1.2rem 1.5rem;
+    }
+    .form .title{
+        padding-bottom: 1.2rem;
+        font-size: 1.625rem;
+    }
+    .form .nav{
+        padding-bottom: 1rem;
+    }
+    .form .form_item, .form input[type="submit"]{
+        margin-bottom: 0.4rem;
+        padding: 0.3rem 1.225rem;
+    }
+    .form .form_checkbox{
+        margin-bottom: 0.4rem;
+        padding: 0 1.225rem;
+    }
+    .form .form_other{
+        text-align: center;
+    }
+}
+@media(min-width: 600px) and (max-width: 899.99px){
+    .form .container{
+        width: 16.4rem;
+        padding: 1.8rem 1.5rem 1.2rem 1.5rem;
+    }
+    .form .title{
+        padding-bottom: 1.2rem;
+        font-size: 1.625rem;
+    }
+    .form .nav{
+        padding-bottom: 1rem;
+    }
+    .form .form_item, .form input[type="submit"]{
+        margin-bottom: 0.4rem;
+        padding: 0.3rem 1.225rem;
+    }
+    .form .form_checkbox{
+        margin-bottom: 0.4rem;
+        padding: 0 1.225rem;
+    }
+    .form .form_other{
+        text-align: center;
+    }
+}
+@media(max-width: 599.99px){
+    .form .container{
+        padding: 1.8rem 1.5rem 1.2rem 1.5rem;
+    }
+    .form .title{
+        padding-bottom: 1.2rem;
+        font-size: 1.625rem;
+    }
+    .form .nav{
+        padding-bottom: 1rem;
+    }
+    .form .form_item, .form input[type="submit"]{
+        margin-bottom: 0.4rem;
+        padding: 0.3rem 1.225rem;
+    }
+    .form .form_checkbox{
+        margin-bottom: 0.4rem;
+        padding: 0 1.225rem;
+    }
+    .form .form_other{
+        text-align: center;
+    }
+}
