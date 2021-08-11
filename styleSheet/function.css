@@ -5,12 +5,24 @@
     left: 0;
     z-index: 1030;
 }
-.invisible{
-    display: none;
-}
 .center{
     margin: 0 auto;
 }
 .underline{
     border-bottom: solid 0.125rem;
+}
+.text_center{
+    text-align: center;
+}
+.button{
+    display: block;
+    border: solid 0.125rem;
+    text-align: center;
+}
+
+.invisible{
+    display: none;
+}
+.login_invisible{
+    display: none;
 }

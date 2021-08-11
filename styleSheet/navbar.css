@@ -62,13 +62,18 @@ nav .login_button :hover{
         padding: 2.25rem 3.125rem;
     }
     nav .logo{
-        padding-right: 3.125rem;
+        padding-right: 2.125rem;
+        font-size: 3.25rem;
+        font-weight: 800;
     }
     nav #main_nav >li{
         padding-right: 3.125rem;
+        padding: 0 0.325rem;
+        font-size: 1.75rem;
     }
     nav #user_nav >li{
         padding: 0 0.325rem;
+        font-size: 1.75rem;
     }
     nav .toggle_button{
         display: none;
@@ -80,23 +85,32 @@ nav .login_button :hover{
     }
     nav .logo{
         margin-right: auto;
+        font-size: 3.25rem;
+        font-weight: 800;
     }
     nav #main_nav{
         display: none;
     }
     nav #user_nav >li{
         padding: 0 0.325rem;
+        font-size: 3.25rem;
+    }
+    nav .login_button a{
+        font-size: 1.75rem;
     }
     nav .toggle_button{
-        padding-left: 1.125rem;
+        padding-left: 2.125rem;
+        font-size: 3.25rem;
     }
 }
 @media(max-width: 599.99px){
     nav{
-        padding: 2.25rem 1.125rem;
+        padding: 1.25rem 1.125rem;
     }
     nav .logo{
         margin-right: auto;
+        font-size: 1.5rem;
+        font-weight: 800;
     }
     nav #main_nav{
         display: none;
@@ -106,5 +120,6 @@ nav .login_button :hover{
     }
     nav .toggle_button{
         padding-left: 1.125rem;
+        font-size: 2.25rem;
     }
 }
