@@ -1,5 +1,5 @@
 body{
-    background-image: url(../resource/paper_w.jpg);
+    background-image: url("../resource/paper_w.jpg");
 }
 .form .title{
     text-align: center;

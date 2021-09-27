@@ -1,0 +1,13 @@
+:root {
+    --r-globalnav-height: 102px;
+    --r-globalnav-stacked-height: 66px;
+    --r-globalnav-viewport-xlarge-min-width:1600px;
+    --r-globalnav-viewport-large-min-width: 1024px;
+    --r-globalnav-viewport-large-query: (min-width: 1024px);
+    --r-globalnav-viewport-medium-min-width: 768px;
+    --r-globalnav-viewport-medium-max-width: 1023px;
+    --r-globalnav-viewport-medium-query: (min-width: 768px);
+    --r-globalnav-viewport-small-min-width: 320px;
+    --r-globalnav-viewport-small-max-width: 767px;
+    --r-globalnav-viewport-small-query: (min-width: 320px);
+}
