@@ -24,9 +24,6 @@ nav .container{
     align-items: center;
     width: 100%;
 }
-nav li ul{
-    display: none;
-}
 #menu-control{
     position: absolute;
     opacity: 0;
@@ -38,49 +35,57 @@ nav li ul{
 
 @media(max-width: 575.99px){
     nav > .container{
-        padding: 0 20px;
+        padding: 0 30px;
     }
     nav .logo{
         margin-right: auto;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 600;
     }
     nav label{
         order: 1;
-        margin-left: 30px;
-        font-size: 30px;
         position: relative;
+        margin-left: 20px;
+        font-size: 24px;
     }
     nav .nav{
-        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top: var(--r-localnav-height);
         right: 0;
         width: 100%;
         min-height: calc(100vh - var(--r-localnav-height));
-        background-color: black;
+        background-color: #0e0e0f;
         opacity: 0;
         transition: .5s;
     }
-    nav #main-nav ul{
+    #main-nav > li > a{
         display: block;
-        background-color: #0e0e0f;
-        
+        font-size: 20px;
     }
-    nav #user-nav{
-        display: none;
+    #main-nav ul{
+        background-color: red;
     }
-    nav #user-nav li{
-        margin-left: 20px;
-    }
-    .nav a{
-        font-size: 24px;
+    #main-nav a{
         color: white;
     }
+    #user-nav{
+        order: -1;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+    #user-nav a{
+        color: white;
+    }
+    #menu-control:checked ~ nav #main-nav{
+        opacity: 1;
+    }
 }
-@media(min-width: 576px) and (max-width: 767.99px){
+@media(min-width: 576px) and (max-width: 991.99px){
     nav > .container{
-        padding: 0 40px;
+        padding: 0 30px;
     }
     nav .logo{
         margin-right: auto;
@@ -89,49 +94,42 @@ nav li ul{
     }
     nav label{
         order: 1;
-        margin-left: 30px;
-        font-size: 30px;
+        position: relative;
+        margin-left: 20px;
+        font-size: 24px;
     }
-    nav #main-nav{
-        display: none;
+    nav .nav{
+        display: flex;
     }
-    nav #main-nav li{
-        margin-right: 10px;
+    #main-nav{
+        position: absolute;
+        top: var(--r-localnav-height);
+        right: 0;
+        width: 100%;
+        min-height: calc(100vh - var(--r-localnav-height));
+        background-color: #0e0e0f;
+        opacity: 0;
+        transition: .5s;
+    }
+    #main-nav > li > a{
+        display: block;
+        font-size: 20px;
+    }
+    #main-nav ul{
+        background-color: red;
+    }
+    #main-nav a{
+        color: white;
     }
     nav #user-nav{
         display: flex;
-        font-size: 24px;
+        font-size: 20px;
     }
     nav #user-nav li{
         margin-left: 20px;
     }
-}
-@media(min-width: 768px) and (max-width: 991.99px){
-    nav > .container{
-        padding: 0 40px;
-    }
-    nav .logo{
-        margin-right: auto;
-        font-size: 40px;
-        font-weight: 600;
-    }
-    nav label{
-        order: 1;
-        margin-left: 30px;
-        font-size: 30px;
-    }
-    nav #main-nav{
-        display: none;
-    }
-    nav #main-nav li{
-        margin-right: 10px;
-    }
-    nav #user-nav{
-        display: flex;
-        font-size: 24px;
-    }
-    nav #user-nav li{
-        margin-left: 20px;
+    #menu-control:checked ~ nav #main-nav{
+        opacity: 1;
     }
 }
 @media(min-width: 992px) and (max-width: 1199.99px){
@@ -146,18 +144,31 @@ nav li ul{
     nav label{
         display: none;
     }
-    nav #main-nav{
+    nav .nav{
+        display: flex;
+        flex-grow: 1;
+    }
+    #main-nav{
         display: flex;
         justify-content: flex-start;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 20px;
     }
-    nav #main-nav li{
+    #main-nav > li{
+        position: relative;
         margin-right: 10px;
+    }
+    #main-nav > li:hover > ul{
+        opacity: 1;
+    }
+    #main-nav ul{
+        position: absolute;
+        opacity: 0;
+        transition: .5s;
     }
     nav #user-nav{
         display: flex;
-        font-size: 24px;
+        font-size: 20px;
     }
     nav #user-nav li{
         margin-left: 20px;
@@ -175,14 +186,27 @@ nav li ul{
     nav label{
         display: none;
     }
-    nav #main-nav{
+    nav .nav{
+        display: flex;
+        flex-grow: 1;
+    }
+    #main-nav{
         display: flex;
         justify-content: flex-start;
         margin-right: auto;
         font-size: 30px;
     }
-    nav #main-nav li{
+    #main-nav > li{
+        position: relative;
         margin-right: 10px;
+    }
+    #main-nav > li:hover > ul{
+        opacity: 1;
+    }
+    #main-nav ul{
+        position: absolute;
+        opacity: 0;
+        transition: .5s;
     }
     nav #user-nav{
         display: flex;
@@ -193,18 +217,10 @@ nav li ul{
     }
 }
 
-section{
-    background: url(../resource/homepage_mobile.jpg);
-    background-size: cover;
-}
-section .container{
-    padding-top: var(--r-localnav-height);
-    min-height: 100vh;
-}
 
 .login-invisible{
     display: none !important;
 }
-.login-invisible2{
+.login-invisible{
     display: none !important;
 }
