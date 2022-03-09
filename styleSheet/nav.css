@@ -1,0 +1,210 @@
+:root{
+    --r-localnav-height: 75px;
+    --r-localnav-stacked-height: 66px;
+
+    --r-xl-viewport-width: 1176px;
+    --r-l-viewport-width: 976px;
+    --r-m-viewport-width: 756px;
+    --r-s-viewport-width: 564px;
+    --r-xs-viewport-width: 300px;
+}
+
+body{
+    background-image: url("../resource/paper_w.jpg");
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: var(--r-localnav-height);
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+nav li ul{
+    display: none;
+}
+#menu-control{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+#menu-control:checked ~ nav .nav{
+    opacity: 1;
+}
+
+@media(max-width: 575.99px){
+    nav > .container{
+        padding: 0 20px;
+    }
+    nav .logo{
+        margin-right: auto;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    nav label{
+        order: 1;
+        margin-left: 30px;
+        font-size: 30px;
+        position: relative;
+    }
+    nav .nav{
+        padding: 5px 20px;
+        position: absolute;
+        top: var(--r-localnav-height);
+        right: 0;
+        width: 100%;
+        min-height: calc(100vh - var(--r-localnav-height));
+        background-color: black;
+        opacity: 0;
+        transition: .5s;
+    }
+    nav #main-nav ul{
+        display: block;
+        background-color: #0e0e0f;
+        
+    }
+    nav #user-nav{
+        display: none;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+    }
+    .nav a{
+        font-size: 24px;
+        color: white;
+    }
+}
+@media(min-width: 576px) and (max-width: 767.99px){
+    nav > .container{
+        padding: 0 40px;
+    }
+    nav .logo{
+        margin-right: auto;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    nav label{
+        order: 1;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    nav #main-nav{
+        display: none;
+    }
+    nav #main-nav li{
+        margin-right: 10px;
+    }
+    nav #user-nav{
+        display: flex;
+        font-size: 24px;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991.99px){
+    nav > .container{
+        padding: 0 40px;
+    }
+    nav .logo{
+        margin-right: auto;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    nav label{
+        order: 1;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    nav #main-nav{
+        display: none;
+    }
+    nav #main-nav li{
+        margin-right: 10px;
+    }
+    nav #user-nav{
+        display: flex;
+        font-size: 24px;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199.99px){
+    nav > .container{
+        padding: 0 40px;
+    }
+    nav .logo{
+        margin-right: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    nav label{
+        display: none;
+    }
+    nav #main-nav{
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+        font-size: 24px;
+    }
+    nav #main-nav li{
+        margin-right: 10px;
+    }
+    nav #user-nav{
+        display: flex;
+        font-size: 24px;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+    }
+}
+@media(min-width: 1200px){
+    nav > .container{
+        padding: 0 60px;
+    }
+    nav .logo{
+        margin-right: 30px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    nav label{
+        display: none;
+    }
+    nav #main-nav{
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+        font-size: 30px;
+    }
+    nav #main-nav li{
+        margin-right: 10px;
+    }
+    nav #user-nav{
+        display: flex;
+        font-size: 30px;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+    }
+}
+
+section{
+    background: url(../resource/homepage_mobile.jpg);
+    background-size: cover;
+}
+section .container{
+    padding-top: var(--r-localnav-height);
+    min-height: 100vh;
+}
+
+.login-invisible{
+    display: none !important;
+}
+.login-invisible2{
+    display: none !important;
+}

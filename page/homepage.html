@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styleSheet/initialize.css">
-    <!-- <link rel="stylesheet" href="../styleSheet/navbar.css"> -->
-    <link rel="stylesheet" href="../styleSheet/dropdown.css">
     <link rel="stylesheet" href="../styleSheet/page.css">
     <link rel="stylesheet" href="../styleSheet/function.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
+    <input type="checkbox" id="menu-switch">
     <nav class="fix_top">
         <a class="logo" href="../page/homepage.html">邁思庫</a>
-        <ul class="navbar" id="main_nav">
-            <li class="dropdownlist">申請檔案
-                <ul class="dropdown_content">
+        <ul id="main-nav">
+            <li>申請檔案
+                <ul>
                     <li>搜尋</li>
                     <li>分類</li>
                     <li>分析</li>
@@ -26,15 +25,15 @@
             </li>
             <li>開通權限</li>
             <li>常見問題</li>
-            <li class="dropdownlist">線上服務
-                <ul class="dropdown_content">
+            <li>線上服務
+                <ul>
                     <li>在校生指導</li>
                     <li>專業顧問</li>
                     <li>線上教學</li>
                 </ul>
             </li>
-            <li class="dropdownlist">其他
-                <ul class="dropdown_content">
+            <li>其他服務
+                <ul>
                     <li>關於我們</li>
                     <li>優勢</li>
                     <li>相關新聞</li>
@@ -43,7 +42,7 @@
                 </ul>
             </li>
         </ul>
-        <ul class="navbar login_invisible" id="user_nav">
+        <ul class="login_invisible" id="user-nav">
             <li class="nav-item">
                 <i class="fas fa-comments"></i>
             </li>
@@ -66,9 +65,9 @@
                 </span>
             </div>
         </div>
-        <div class="toggle_button">
+        <label for="menu-switch">
             <i class="fas fa-bars"></i>
-        </div>
+        </label>
     </nav>
     <header id="homepage">
         <div class = "container">

@@ -1,57 +1,42 @@
 :root{
-    /* --r-localnav-height: 52px; */
-    --r-localnav-height: 102px;
+    --r-localnav-height: 75px;
     --r-localnav-stacked-height: 66px;
-    --r-localnav-gn-height: var(--r-globalnav-height, 44px);
-    --r-localnav-viewport-large-min-width: 1024px;
-    --r-localnav-viewport-large-query: (min-width: 1024px);
-    --r-localnav-viewport-medium-min-width: 768px;
-    --r-localnav-viewport-medium-max-width: 1023px;
-    --r-localnav-viewport-medium-query: (min-width: 768px);
-    --r-localnav-viewport-small-min-width: 320px;
-    --r-localnav-viewport-small-max-width: 767px;
-    --r-localnav-viewport-small-query: (min-width: 320px);
-    
-    --text-xl: 4.25rem;
-    --text-l: 2.25rem;
-    --text-base: 1.25rem;
-    --text-sm: 0.75rem;
 
-    --font-bold: 800;
-    --font-bolder: 600;
+    --r-xl-viewport-width: 1176px;
+    --r-l-viewport-width: 976px;
+    --r-m-viewport-width: 756px;
+    --r-s-viewport-width: 564px;
+    --r-xs-viewport-width: 300px;
 }
 
+body > input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
 nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding: calc(100% * 0.025) calc(100vw * 0.05);
+    margin: auto;
+    height: var(--r-localnav-height);
 }
-nav .logo{
-    padding-right: calc(100vw * 0.025);
-    font-size: var(--text-xl);
-    font-weight: var(--font-bold);
+nav #main-nav{
+    margin-right: auto;
 }
-nav .navbar{
-    display: flex;
-    flex-flow: row nowrap;
+nav #main-nav > li{
+    position: relative;
 }
-nav #main_nav{
-    justify-content: flex-start;
+nav #main-nav > li:hover ul{
+    display: block;
 }
-nav #main_nav >li{
-    min-width: calc(100% * 0.325);
-    font-weight: var(--font-bolder);
-    font-size: var(--text-base);
+nav #main-nav ul{
+    display: none;
+    position: absolute;
 }
-nav #user_nav{
+nav #user-nav{
     justify-content: flex-end;
-    margin-left: auto;
-}
-nav #user_nav >li{
-    padding: 0 calc(100% * 0.3);
-    font-size: var(--text-base)
 }
 nav .login_button{
     margin-left: auto;
@@ -61,44 +46,21 @@ nav .login_button{
 nav .login_button .container{
     padding: 0.25rem 1.125rem;
 }
-nav .login_button :hover{
+nav .login_button:hover{
     border-radius: 1.725rem;
-    background-color: #ffcd00;
-    transition:background-color 2s;
+    background-color: #ffcc00e0;
+    transition:background-color .5s;
 }
 
-@media(min-width: 1800px){
-    nav .toggle_button{
-        display: none;
+@media(max-width: 575.99px){
+    nav{
+        max-width: var(--r-xs-viewport-width);
     }
-}
-@media(min-width: 1200px) and (max-width: 1799.99px){
-    nav .toggle_button{
-        display: none;
+    nav .logo{
+        margin-right: 20px;
+        font-size: 40px;
+        font-weight: 600;
     }
-}
-@media(min-width: 900px) and (max-width: 1199.99px){
-    nav #main_nav{
-        display: none;
-    }
-}
-@media(min-width: 600px) and (max-width: 899.99px){
-    nav #main_nav{
-        display: none;
-    }
-    nav #user_nav >li{
-        padding: 0 0.325rem;
-        font-size: 3.25rem;
-    }
-    nav .login_button a{
-        font-size: 1.75rem;
-    }
-    nav .toggle_button{
-        padding-left: 2.125rem;
-        font-size: 3.25rem;
-    }
-}
-@media(max-width: 599.99px){
     nav #main_nav{
         display: none;
     }
@@ -110,59 +72,166 @@ nav .login_button :hover{
         font-size: 2.25rem;
     }
 }
+@media(min-width: 1200px){
+    nav{
+        max-width: var(--r-xl-viewport-width);
+    }
+    nav .logo{
+        margin-right: 40px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    nav #main-nav > li{
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    nav #user-nav li{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    nav .toggle_button{
+        display: none;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199.99px){
+    nav{
+        max-width: var(--r-l-viewport-width);
+    }
+    nav .logo{
+        margin-right: 40px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    nav #main-nav > li{
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    nav #user-nav li{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    nav .toggle_button{
+        display: none;
+    }
+}
+@media(min-width: 768px) and (max-width: 991.99px){
+    nav{
+        max-width: var(--r-m-viewport-width);
+    }
+    nav .logo{
+        margin-right: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    nav #main-nav{
+        display: none;
+    }
+    nav #user-nav li{
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    nav .toggle_button{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+@media(min-width: 576px) and (max-width: 767.99px){
+    nav{
+        max-width: var(--r-s-viewport-width);
+    }
+    nav .logo{
+        margin-right: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    nav #main-nav{
+        display: none;
+    }
+    nav #user-nav >li{
+        padding: 0 0.325rem;
+        font-size: 3.25rem;
+    }
+    nav .login_button a{
+        font-size: 1.75rem;
+    }
+    nav .toggle_button{
+        padding-left: 2.125rem;
+        font-size: 3.25rem;
+    }
+}
+
 
 body{
     background-image: url("../resource/paper_w.jpg");
 }
 header {
-    padding: calc(100% * 0.22) calc(100% * 0.05) 0 calc(100% * 0.05);
     background-size: cover;
     min-height: 100vh;
 }
-@media(min-width: 1800px){
+header .container{
+    margin: auto;
+    padding-top: var(--r-localnav-height);
+}
+@media(min-width: 1200px){
     header{
         background-image: url("../resource/homepage.jpg");
-        background-size: cover;
     }
     header .container{
-        padding: calc(100% * 0.22) calc(100% * 0.05) 0 calc(100% * 0.05);
+        min-width: var(--r-xl-viewport-width);
     }
     header .masthead_heading{
-        padding-bottom: calc(100% * 0.025);
-        font-size: var(--text-xl);
+        padding-top: 160px;
+        font-size: 60px;
+        font-weight: 500;
     }
     header .masthead_subdeading{
-        padding-right: calc(100% * 0.55);
-        font-size: var(--text-base);
+        margin-top: 20px;
+        padding-right: 45%;
+        font-size: 20px;
     }
 }
-@media(min-width: 1200px) and (max-width: 1799.99px){
+@media(min-width: 992px) and (max-width: 1199.99px){
     header{
         background-image: url("../resource/homepage.jpg");
     }
+    header .container{
+        max-width: var(--r-l-viewport-width);
+    }
     header .masthead_heading{
-        padding-bottom: calc(100% * 0.025);
-        font-size: calc(var(--text-xl) * 1);
+        padding-top: 160px;
+        font-size: 60px;
+        font-weight: 500;
     }
     header .masthead_subdeading{
-        padding-right: calc(100% * 0.55);
-        font-size: calc(var(--text-base) * 1);
+        margin-top: 20px;
+        padding-right: 45%;
+        font-size: 20px;
     }
 }
-@media(min-width: 900px) and (max-width: 1199.99px){
+@media(min-width: 768px) and (max-width: 991.99px){
     header{
         background-image: url("../resource/homepage_mobile.jpg");
     }
+    header .container{
+        max-width: var(--r-m-viewport-width);
+    }
     header .masthead_heading{
-        padding-bottom: calc(100% * 0.025);
-        font-size: calc(var(--text-xl) * 1);
+        padding-top: 160px;
+        font-size: 60px;
+        font-weight: 500;
     }
     header .masthead_subdeading{
-        padding-right: calc(100% * 0.25);
-        font-size: calc(var(--text-l) * 1);
+        margin-top: 20px;
+        padding-right: 45%;
+        font-size: 20px;
     }
 }
-@media(min-width: 600px) and (max-width: 899.99px){
+@media(min-width: 576px) and (max-width: 767.99px){
     header{
         background-image: url("../resource/homepage_mobile.jpg");
     }
@@ -176,7 +245,7 @@ header {
         font-size: calc(var(--text-l) * 0.8);
     }
 }
-@media(max-width: 599.99px){
+@media(max-width: 575.99px){
     header{
         background-image: url("../resource/homepage_mobile.jpg");
     }
