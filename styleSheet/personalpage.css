@@ -1,0 +1,28 @@
+body{
+    background-image: url("../resource/paper_w.jpg");
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+
+section .container{
+    margin: auto;
+    padding: var(--r-globalnav-height) 0;
+    width: var(--r-globalnav-viewport-xlarge-min-width);
+}
+
+@media(min-width: 1800px){
+}
+@media(min-width: 1200px) and (max-width: 1799.99px){
+}
+@media(min-width: 900px) and (max-width: 1199.99px){
+}
+@media(min-width: 600px) and (max-width: 899.99px){
+}
+@media(max-width: 599.99px){
+}
