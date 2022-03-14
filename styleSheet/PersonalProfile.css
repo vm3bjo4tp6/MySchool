@@ -1,0 +1,138 @@
+.chart {
+    margin: auto;
+    width: 95%;
+    min-width: 320px;
+}
+.chart section{
+    margin: 2rem 0;
+    border: 1px solid #dbdbdb;
+}
+
+/* 標題 */
+.chart .topic-column{
+    display: flex;
+    align-items: center;
+    padding: .5rem 3rem .5rem 6rem;
+    font-weight: 600;
+    background-color: #dbdbdb;
+    overflow: hidden;
+}
+.chart .topic-column .label{
+    flex-grow: 1;
+    font-size: 1.6rem;
+}
+.chart .topic-column .button{
+    font-size: 1.2rem;
+    color: #636363;
+}
+/* 展示 */
+.chart .display-column{
+    padding: 1rem 3rem;
+}
+.display-column .item{
+    display: flex;
+}
+.item .pic{
+    margin-right: 2rem;
+    width: 10rem;
+    height: 10rem;
+}
+.item .pic img{
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+    border: 6px solid white;
+    border-radius: 100%;
+}
+.item .txt{
+    flex-grow: 1;
+}
+
+/* 修改表單 */
+.chart .modify-column{
+    padding: 1rem 3rem;
+}
+.question-and-answer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: .5rem 0;
+}
+.question-and-answer .question{
+    flex-shrink: 0;
+    width: 6.25rem;
+    margin-right: 1.2rem;
+    font-size: 1.25rem;
+    text-align: left ;
+}
+.question-and-answer .answerblock{
+    width: 100%;
+}
+.question-and-answer .answerblock .answer-item{
+    margin: 0 0.625rem;
+}
+.question-and-answer input[type="text"], .question-and-answer .combobox, .question-and-answer textarea, .question-and-answer .answer-display{
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    border-radius: 0.25rem;
+    border: 2px #d9e8e9 solid;
+}
+.question-and-answer input[type="text"]:focus, .question-and-answer .combobox:focus, .question-and-answer textarea:focus,  .question-and-answer .answer-display:focus{
+    border: 3px #fcbc69 solid;
+}
+
+
+
+
+/* .basic{
+    background: linear-gradient(180deg,#fcb110 50%, transparent 50%) top center/50% 100%;
+
+}
+.basic .container{
+    display: flex;
+    padding: 4rem 4rem;
+}
+.basic .pic{
+    margin-right: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+.basic .pic img{
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+    border: 6px solid white;
+    border-radius: 100%;
+}
+.basic .txt{
+    display: flex;
+    flex-flow: column wrap;
+}
+.basic .top{
+    flex-shrink: 1;
+    padding-top: 2rem;
+    height: 50%;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+}
+.basic .bottom{
+    height: 50%;
+    flex-shrink: 1;
+    font-size: 1.2rem;
+}
+.basic .dropdown-button{
+    text-align: center;
+}
+
+
+.item{
+    display: flex;
+} */
+
+
+.hide{
+    display: none;
+}
