@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styleSheet/global.css">
-    <link rel="stylesheet" href="../styleSheet/initialize.css">
     <link rel="stylesheet" href="../styleSheet/nav.css">
     <link rel="stylesheet" href="../styleSheet/PersonalProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="logo">
-                <a href="Homepage.html">邁思庫</a>
+                <a href="HomePage.html">邁思庫</a>
             </div>
             <div class="nav">
                 <ul id="main-nav">
@@ -94,16 +94,16 @@
             <div class="login-invisible2 login-button button">
                 <div class="container">
                     <span>
-                        <a href="login.html">註冊 | 登入</a>
+                        <a href="Login.html">註冊 | 登入</a>
                     </span>
                 </div>
             </div>
             <div class="toggle js-dropdown">
                 <i class="fas fa-bars"></i>
-            </label>
+            </div>
         </div>
     </nav>
-    <!-- <section class="fix-center-window hidden">
+    <!-- <section class="fix-center-window hide">
         <div class="container">
             <div class="display-block tag-board">
                 <div class="container"></div>
@@ -116,145 +116,29 @@
         </div>
     </section> -->
     <section class="chart">
-        <section class="basic">
-            <div class="container">
+        <section id="basic">
+            <div class="display-column">
                 <div class="pic">
                     <img src="http://picsum.photos/200/200?random=10">
                 </div>
                 <div class="txt">
-                    <div class="top">
+                    <div class="main">
                         <span>王小明</span>
                     </div>
-                    <div class="bottom">
-                        <div class="up">
+                    <div class="sub">
+                        <div class="top">
                             <span>台灣</span>
                             <span>高中生</span>
                             <span>一般生</span>
                             <span>生理男</span>
                         </div>
-                        <div class="down">
+                        <div class="bottom">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus repudiandae consequuntur expedita quod quam iste laborum quis mollitia aspernatur. Aperiam delectus, incidunt ea debitis molestiae iusto velit enim tempore!
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="education">
-            <div class="topic-column">
-                <span class="label">學歷</span>
-                <span class="button-add">+新增</span>
-            </div>
-            <div class="display-column">
-                <div class="item">
-                    <div class="pic">
-                        <img src="http://picsum.photos/200/200?random=20">
-                    </div>
-                    <div class="txt">
-                        <div>
-                            <span>台灣大學</span>
-                            <span>電機系</span>
-                            <span>畢業</span>
-                        </div>
-                        <div>
-                            <span>2012/9~2016/6</span>
-                        </div>
-                    </div>
-                    <div class="ritght">
-                        <div class="">GPA</div>
-                        <div class="">4.0</div>
-                    </div>
-                </div>
-            </div>
             <div class="modify-column hide">
-                <div class="question-and-answer">
-                    <div class="question">學校名稱</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="school"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">學歷</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="degree"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">科系</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="subject"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">在學期間</div>
-                    <div class="answerblock vertically-center">
-                        <input class ="answer flex-row-item" type="text" name="start-year" placeholder="入學時間（西元年）">
-                        <input class ="answer flex-row-item" type="text" name="start-month" placeholder="入學時間（月份）">
-                        <input class ="answer flex-row-item" type="text" name="finish-year" placeholder="結束時間（西元年）">
-                        <input class ="answer flex-row-item" type="text" name="finish-month" placeholder="結束時間（月份）">
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">狀態</div>
-                    <div class="answerblock vertically-center">
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="graduate" checked>
-                            <span>畢業</span>
-                        </label>
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="ungraduate">
-                            <span>肄業</span>
-                        </label>
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="onschool">
-                            <span>在學中</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">學業成績</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer flex-row-item" name="system"></select>
-                        <input class="flex-row-item answer" type="text" name="score" placeholder="成績">
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">排名</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="rank"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">學科表現</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="performance"></select>
-                    </div>
-                </div>
-                <div class="button-block vertically-center">
-                    <span class="button js-save">儲存</span>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- <section class="chart">
-        <section class="form-topic" id="basic">
-            <div class="topic-column">
-                <span class="title">個人資料</span>
-                <span class="showModifyWindowButton js-change-display">＋新增</span>
-            </div>
-            <div class="edit-column hidden">
-                <span class="title">編輯個人資料</span>
-                <span class="showModifyWindowButton js-change-display">X</span>
-            </div>
-            <div class="display-column">
-                <div class="container">
-                    <div class="logo"></div>
-                    <div class="txt">
-                        <div class="up"></div>
-                        <div class="down"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="modify-column hidden">
                 <div class="question-and-answer">
                     <div class="question">姓</div>
                     <div class="answerblock vertically-center">
@@ -327,227 +211,204 @@
                 </div>
             </div>  
         </section>
-        <section class="form-topic" id="education">
+        <section id="education">
             <div class="topic-column">
-                <span class="title">學歷</span>
-                <span class="showModifyWindowButton js-change-display">＋新增</span>
-            </div>
-            <div class="edit-column hidden">
-                <span class="title">編輯學歷</span>
-                <span class="showModifyWindowButton js-change-display">X</span>
+                <span class="label">學歷</span>
+                <span class="button js-change">+新增</span>
             </div>
             <div class="display-column">
-            </div>
-            <div class="modify-column hidden">
-                <div class="question-and-answer">
-                    <div class="question">學校名稱</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="school"></select>
+                <div class="item">
+                    <div class="pic">
+                        <img src="http://picsum.photos/200/200?random=20">
                     </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">學歷</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="degree"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">科系</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="subject"></select>
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">在學期間</div>
-                    <div class="answerblock vertically-center">
-                        <input class ="answer flex-row-item" type="text" name="start-year" placeholder="入學時間（西元年）">
-                        <input class ="answer flex-row-item" type="text" name="start-month" placeholder="入學時間（月份）">
-                        <input class ="answer flex-row-item" type="text" name="finish-year" placeholder="結束時間（西元年）">
-                        <input class ="answer flex-row-item" type="text" name="finish-month" placeholder="結束時間（月份）">
-                    </div>
-                </div>
-                <div class="question-and-answer">
-                    <div class="question">狀態</div>
-                    <div class="answerblock vertically-center">
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="graduate" checked>
+                    <div class="txt">
+                        <div>
+                            <span>台灣大學</span>
+                            <span>電機系</span>
                             <span>畢業</span>
-                        </label>
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="ungraduate">
-                            <span>肄業</span>
-                        </label>
-                        <label class="flex-row-item">
-                            <input class ="answer" type="radio" name="status" value="onschool">
-                            <span>在學中</span>
-                        </label>
+                        </div>
+                        <div>
+                            <span>2012/9~2016/6</span>
+                        </div>
+                    </div>
+                    <div class="ritght">
+                        <div class="">GPA</div>
+                        <div class="">4.0</div>
                     </div>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">學業成績</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer flex-row-item" name="system"></select>
-                        <input class="flex-row-item answer" type="text" name="score" placeholder="成績">
+                <div class="item">
+                    <div class="pic">
+                        <img src="http://picsum.photos/200/200?random=20">
+                    </div>
+                    <div class="txt">
+                        <div>
+                            <span>台灣大學</span>
+                            <span>電機系</span>
+                            <span>畢業</span>
+                        </div>
+                        <div>
+                            <span>2012/9~2016/6</span>
+                        </div>
+                    </div>
+                    <div class="ritght">
+                        <div class="">GPA</div>
+                        <div class="">4.0</div>
                     </div>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">排名</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="rank"></select>
-                    </div>
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">學校名稱</div>
+                    <select class="answer combobox" name="school"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">學科表現</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="performance"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">學歷</div>
+                    <select class="answer combobox" name="degree"></select>
                 </div>
-                <div class="button-block vertically-center">
+                <div class="question-group">
+                    <div class="label">科系</div>
+                    <select class="answer combobox" name="subject"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">在學期間</div>
+                    <input class ="answer textbox" type="text" name="start-year" placeholder="入學時間（西元年）">
+                    <input class ="answer textbox" type="text" name="start-month" placeholder="入學時間（月份）">
+                    <input class ="answer textbox" type="text" name="finish-year" placeholder="結束時間（西元年）">
+                    <input class ="answer textbox" type="text" name="finish-month" placeholder="結束時間（月份）">
+                </div>
+                <div class="question-group">
+                    <div class="label">狀態</div>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="graduate" checked>
+                        <span>畢業</span>
+                    </label>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="ungraduate">
+                        <span>肄業</span>
+                    </label>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="onschool">
+                        <span>在學中</span>
+                    </label>
+                </div>
+                <div class="question-group">
+                    <div class="label">學業成績</div>
+                    <select class="answer combobox flex-row-item" name="system"></select>
+                    <input class="answer textbox" type="text" name="score" placeholder="成績">
+                </div>
+                <div class="question-group">
+                    <div class="label">排名</div>
+                    <select class="answer combobox" name="rank"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">學科表現</div>
+                    <select class="answer combobox" name="performance"></select>
+                </div>
+                <div class="btn-group">
                     <span class="button js-save">儲存</span>
                 </div>
-            </div>  
-        </section>
-        <section class="form-topic" id="extracurricular">
-            <div class="topic-column">
-                <span class="title">課外活動</span>
-                <span class="showModifyWindowButton js-change-display">＋新增</span>
             </div>
-            <div class="edit-column hidden">
-                <span class="title">編輯課外活動</span>
-                <span class="showModifyWindowButton js-change-display">X</span>
+        </section>
+        <section id="extracurricular">
+            <div class="topic-column">
+                <span class="label">課外活動</span>
+                <span class="button js-change">+新增</span>
             </div>
             <div class="display-column">
             </div>
-            <div class="modify-column hidden">
-                <div class="question-and-answer">
-                    <div class="question">活動總類</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="type"></select>
-                    </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">活動總類</div>
+                    <select class="answer combobox" name="type"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">活動項目</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="item"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">活動項目</div>
+                    <select class="answer combobox" name="item"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">持續時間</div>
-                    <div class="answerblock vertically-center">
-                        <input class="answer" type="text" name="period">
-                    </div>
+                <div class="question-group">
+                    <div class="label">持續時間</div>
+                    <input class="answer textbox" type="text" name="period">
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">擔任角色</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="role"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">擔任角色</div>
+                    <select class="answer combobox" name="role"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">活動強度</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="rank"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">活動強度</div>
+                    <select class="answer combobox" name="rank"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">獲獎認證</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="award"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">獲獎認證</div>
+                    <select class="answer combobox" name="award"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">活動心得</div>
-                    <div class="answerblock vertically-center">
-                        <textarea class="answer" name="experience" rows="10"></textarea>
-                    </div>
+                <div class="question-group">
+                    <div class="label">活動心得</div>
+                    <textarea class="answer textbox" name="experience" rows="10"></textarea>
                 </div>
-                <div class="button-block vertically-center">
+                <div class="btn-group">
                     <span class="button js-save">儲存</span>
                 </div>
             </div>  
         </section>
-        <section class="form-topic" id="exam">
+        <section id="exam">
             <div class="topic-column">
-                <span class="title">檢測成績</span>
-                <span class="showModifyWindowButton js-change-display">＋新增</span>
-            </div>
-            <div class="edit-column hidden">
-                <span class="title">編輯檢測成績</span>
-                <span class="showModifyWindowButton js-change-display">X</span>
+                <span class="label">檢測成績</span>
+                <span class="button js-change">+新增</span>
             </div>
             <div class="display-column">
             </div>
-            <div class="modify-column hidden">
-                <div class="question-and-answer">
-                    <div class="question">檢測種類</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="type"></select>
-                    </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">檢測種類</div>
+                    <select class="answer combobox" name="type"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">檢測項目</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="item"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">檢測項目</div>
+                    <select class="answer combobox" name="item"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">檢測科目</div>
-                    <div class="answerblock vertically-center">
-                        <select class="combobox answer" name="subject"></select>
-                    </div>
+                <div class="question-group">
+                    <div class="label">檢測科目</div>
+                    <select class="answer combobox" name="subject"></select>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">檢測成績</div>
-                    <div class="answerblock vertically-center">
-                        <input class="answer" type="text" name="score">
-                    </div>
+                <div class="question-group">
+                    <div class="label">檢測成績</div>
+                    <input class="answer textbox" type="text" name="score">
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">準備心得</div>
-                    <div class="answerblock vertically-center">
-                        <textarea class="answer" name="experience" rows="10"></textarea>
-                    </div>
+                <div class="question-group">
+                    <div class="label">準備心得</div>
+                    <textarea class="answer textbox" name="experience" rows="10"></textarea>
                 </div>
-                <div class="button-block vertically-center">
+                <div class="btn-group">
                     <span class="button js-save">儲存</span>
                 </div>
             </div>  
         </section>
-        <section class="form-topic" id="essay">
+        <section id="essay">
             <div class="topic-column">
-                <span class="title">論文自傳</span>
-                <span class="showModifyWindowButton js-change-display">＋新增</span>
-            </div>
-            <div class="edit-column hidden">
-                <span class="title">簡單介紹</span>
-                <span class="showModifyWindowButton js-change-display">X</span>
+                <span class="label">論文自傳</span>
+                <span class="button js-change">+新增</span>
             </div>
             <div class="display-column">
             </div>
-            <div class="modify-column hidden">
-                <div class="question-and-answer">
-                    <div class="question">上傳內容</div>
-                    <div class="answerblock vertically-center">
-                        <label>
-                            <input class="answer" type="file" data-target="file-uploader"  name="file">
-                        </label>
-                    </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">上傳內容</div>
+                    <label>
+                        <input class="answer" type="file" data-target="file-uploader"  name="file">
+                    </label>
                 </div>
-                <div class="question-and-answer">
-                    <div class="question">簡單介紹</div>
-                    <div class="answerblock vertically-center">
-                        <textarea class="answer" name="introduce" rows="10"></textarea>
-                    </div>
+                <div class="question-group">
+                    <div class="label">簡單介紹</div>
+                    <textarea class="answer textbox" name="introduce" rows="10"></textarea>
                 </div>
-                <div class="button-block vertically-center">
+                <div class="btn-group">
                     <span class="button js-save">儲存</span>
                 </div>
             </div>  
         </section>
-    </section> -->
+    </section>
 
-    <!-- <script src="../js/data.js"></script>
-    <script src="../js/account.js"></script> -->
+    <script src="../js/data.js"></script>
     <script src="../js/dropdown.js"></script>
 </body>
 </html>

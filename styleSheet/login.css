@@ -6,6 +6,10 @@ body{
     justify-content: center;
     margin-top: 3rem;
 }
+.form .container{
+    min-width: 300px;
+    max-width: 600px;
+}
 .form h3{
     font-size: 1.8rem;
 }
@@ -44,14 +48,13 @@ body{
     .form .container{
         margin: auto;
         width: 95%;
-        min-width: 300px;
     }
 }
 @media(min-width: 767.89px) and (max-width: 1199.88px){
     .form .container{
         padding: 5rem;
         border: 10px solid white;
-        width: 75%;
+        border-radius: 20px;
     }
 }
 @media(min-width: 1199.89px){
@@ -59,7 +62,6 @@ body{
         padding: 5rem;
         border: 10px solid white;
         border-radius: 20px;
-        width: 50%;
     }
 }
 

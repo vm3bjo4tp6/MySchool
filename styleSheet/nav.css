@@ -52,6 +52,7 @@ nav #main-nav ul{
         background-color: black;
         opacity: 0;
         transition: .5s;
+        z-index: -1;
     }
     #main-nav{
         margin: .2rem auto 0;
@@ -115,6 +116,7 @@ nav #main-nav ul{
         background-color: black;
         opacity: 0;
         transition: .5s;
+        z-index: -1;
     }
     #main-nav > li > a{
         font-size: 1.6rem;

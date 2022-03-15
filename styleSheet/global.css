@@ -38,6 +38,9 @@ li{
 input{
     outline: none;
 }
+select{
+    outline: none;
+}
 
 
 .fix-top{
@@ -49,6 +52,7 @@ input{
 }
 .js-unOpacity{
     opacity: 1 !important;
+    z-index: 10 !important;
 }
 
 .login-invisible1{

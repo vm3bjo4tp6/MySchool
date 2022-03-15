@@ -12,7 +12,7 @@
 .chart .topic-column{
     display: flex;
     align-items: center;
-    padding: .5rem 3rem .5rem 6rem;
+    padding: .5rem 3rem;
     font-weight: 600;
     background-color: #dbdbdb;
     overflow: hidden;
@@ -26,16 +26,35 @@
     color: #636363;
 }
 /* 展示 */
-.chart .display-column{
-    padding: 1rem 3rem;
+#basic{
+    background: linear-gradient(180deg,#fcb110 50%, transparent 50%) top center/50% 100%;
+} 
+#basic .display-column{
+    display: flex;
+    padding: 4rem 4rem;
 }
+#basic .pic{
+    margin-right: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+#basic .pic img{
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+    border: 6px solid white;
+    border-radius: 100%;
+}
+
 .display-column .item{
     display: flex;
+    padding: 1rem 3rem;
+    border-bottom: 2px solid #cecbcb;
 }
 .item .pic{
     margin-right: 2rem;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
 }
 .item .pic img{
     width: inherit;
@@ -52,35 +71,51 @@
 .chart .modify-column{
     padding: 1rem 3rem;
 }
-.question-and-answer{
-    width: 100%;
+.modify-column .question-group{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
     margin: .5rem 0;
+    width: 100%;
+    font-size: 1.2rem;
 }
-.question-and-answer .question{
+.modify-column .question-group .label{
     flex-shrink: 0;
     width: 6.25rem;
-    margin-right: 1.2rem;
     font-size: 1.25rem;
     text-align: left ;
 }
-.question-and-answer .answerblock{
-    width: 100%;
+.modify-column .question-group .answer{
+    flex-grow: 1;
+    margin-left: 1.2rem;
 }
-.question-and-answer .answerblock .answer-item{
-    margin: 0 0.625rem;
+.modify-column .combobox, .modify-column .textbox{
+    padding: .3rem;
+    font-size: 1.3rem;
 }
-.question-and-answer input[type="text"], .question-and-answer .combobox, .question-and-answer textarea, .question-and-answer .answer-display{
-    width: 100%;
-    height: 100%;
-    background-color: #ececec;
-    border-radius: 0.25rem;
-    border: 2px #d9e8e9 solid;
+.modify-column .btn-group{
+    display: flex;
+    justify-content: center;
 }
-.question-and-answer input[type="text"]:focus, .question-and-answer .combobox:focus, .question-and-answer textarea:focus,  .question-and-answer .answer-display:focus{
-    border: 3px #fcbc69 solid;
+.modify-column .btn-group .button{
+    padding: .6rem 2.4rem;
+    border-radius: 10px;
+    background: #ffb326;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+@media(max-width: 767.88px){
+    .display-column .item{
+        flex-direction: column;
+    }  
+    .modify-column .question-group{
+        flex-direction: column;
+    }
+    .modify-column .question-group .answer{
+        margin: .4rem 0 0;
+    }
+}
+@media(min-width: 767.89px) and (max-width: 1199.88px){
+}
+@media(min-width: 1199.89px){
 }
 
 
@@ -89,22 +124,6 @@
 /* .basic{
     background: linear-gradient(180deg,#fcb110 50%, transparent 50%) top center/50% 100%;
 
-}
-.basic .container{
-    display: flex;
-    padding: 4rem 4rem;
-}
-.basic .pic{
-    margin-right: 1rem;
-    width: 10rem;
-    height: 10rem;
-}
-.basic .pic img{
-    width: inherit;
-    height: inherit;
-    vertical-align: middle;
-    border: 6px solid white;
-    border-radius: 100%;
 }
 .basic .txt{
     display: flex;
