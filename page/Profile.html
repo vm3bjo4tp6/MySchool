@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleSheet/global.css">
+    <link rel="stylesheet" href="../styleSheet/nav.css">
+    <link rel="stylesheet" href="../styleSheet/PersonalProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="HomePage.html">邁思庫</a>
+            </div>
+            <div class="nav">
+                <ul id="main-nav">
+                    <li class="js-dropdown">
+                        <a href="#">申請檔案</a>      
+                        <ul>
+                            <li><a href="#">搜尋</a></li>
+                            <li><a href="#">分類</a></li>
+                            <li><a href="#">分析</a></li>
+                            <li><a href="#">自傳</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">開通權限</a>
+                    </li>
+                    <li>
+                        <a href="#">常見問題</a>
+                    </li>
+                    <li class="js-dropdown">
+                        <a href="#">線上服務</a>
+                        <ul>
+                            <li>
+                                <a href="#">在校生指導</a>
+                            </li>
+                            <li>
+                                <a href="#">專業顧問</a>
+                            </li>
+                            <li>
+                                <a href="#">線上教學</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="js-dropdown">
+                        <a href="#">其他服務</a>
+                        <ul>
+                            <li>
+                                <a href="#">關於我們</a>
+                            </li>
+                            <li>
+                                <a href="#">優勢</a>
+                            </li>
+                            <li>
+                                <a href="#">相關新聞</a>
+                            </li>
+                            <li>
+                                <a href="#">其他資源</a>
+                            </li>
+                            <li>
+                                <a href="#">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="login-invisible1" id="user-nav">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-folder"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Profile.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-invisible login-button button">
+                <div class="container">
+                    <span>
+                        <a href="Login.html">註冊 | 登入</a>
+                    </span>
+                </div>
+            </div>
+            <div class="toggle js-dropdown">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="fix-center-window hide">
+        <div class="container">
+            <div class="display-block tag-board">
+                <div class="container"></div>
+            </div>
+            <div class="button-block">
+                <div class="container">
+                    <div class="button">確定</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="chart">
+        <section id="basic">
+            <div class="display-column">
+                <div class="item">
+                    <div class="pic">
+                        <img src="http://picsum.photos/200/200?random=10">
+                    </div>
+                    <div class="txt">
+                        <div class="main">
+                            <span>王小明</span>
+                        </div>
+                        <div class="sub">
+                            <span>台灣</span>
+                            <span>高中生</span>
+                            <span>一般生</span>
+                            <span>生理男</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">姓</div>
+                    <input class="answer textbox" type="text" name="lastName">
+                </div>
+                <div class="question-group">
+                    <div class="label">名</div>
+                    <input class="answer textbox" type="text" name="firstName">
+                </div>
+                <div class="question-group">
+                    <div class="label">護照名</div>
+                    <input class="answer textbox" type="text" name="pastportName">
+                </div>
+                <div class="question-group">
+                    <div class="label">身理性別</div>
+                    <label>
+                        <input class ="answer" type="radio" name="gender" value="graduate" checked>
+                        <span>男</span>
+                    </label>
+                    <label>
+                        <input class ="answer" type="radio" name="gender" value="ungraduate">
+                        <span>女</span>
+                    </label>
+                </div>
+                <div class="question-group">
+                    <div class="label">考生身份</div>
+                    <select class="answer combobox" name="identity"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">護照國籍</div>
+                    <div class="answer answer-display js-pop-up-window" name="passportNation"></div>
+                </div>
+                <div class="question-group">
+                    <div class="label">居住國家</div>
+                    <select class="combobox answer" name="inhabit"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">夢想職業</div>
+                    <div class="answerblock vertically-center">
+                        <div class="answer  answer-display js-pop-up-window" name="dream"></div>
+                    </div>
+                </div>
+                <div class="question-group">
+                    <div class="label">大頭貼照</div>
+                    <input class="answer" type="file" data-target="file-uploader"  name="selfie">
+                </div>
+                <div class="question-group">
+                    <div class="label">自我介紹</div>
+                    <textarea class="answer textbox" name="introduce" rows="10"></textarea>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>
+            <div class="dropdown-column js-change">
+                詳細各人訊息
+            </div>
+        </section>
+        <section id="education">
+            <div class="topic-column">
+                <span class="label">學歷</span>
+                <span class="button js-change">+新增</span>
+            </div>
+            <div class="display-column">
+                <div class="item">
+                    <div class="pic">
+                        <img src="http://picsum.photos/200/200?random=20">
+                    </div>
+                    <div class="txt">
+                        <div>
+                            <span>台灣大學</span>
+                            <span>電機系</span>
+                            <span>畢業</span>
+                        </div>
+                        <div>
+                            <span>2012/9~2016/6</span>
+                        </div>
+                    </div>
+                    <div class="ritght">
+                        <div class="">GPA</div>
+                        <div class="">4.0</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="http://picsum.photos/200/200?random=20">
+                    </div>
+                    <div class="txt">
+                        <div>
+                            <span>台灣大學</span>
+                            <span>電機系</span>
+                            <span>畢業</span>
+                        </div>
+                        <div>
+                            <span>2012/9~2016/6</span>
+                        </div>
+                    </div>
+                    <div class="ritght">
+                        <div class="">GPA</div>
+                        <div class="">4.0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">學校名稱</div>
+                    <select class="answer combobox" name="school"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">學歷</div>
+                    <select class="answer combobox" name="degree"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">科系</div>
+                    <select class="answer combobox" name="subject"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">在學期間</div>
+                    <input class ="answer textbox" type="text" name="start-year" placeholder="入學時間（西元年）">
+                    <input class ="answer textbox" type="text" name="start-month" placeholder="入學時間（月份）">
+                    <input class ="answer textbox" type="text" name="finish-year" placeholder="結束時間（西元年）">
+                    <input class ="answer textbox" type="text" name="finish-month" placeholder="結束時間（月份）">
+                </div>
+                <div class="question-group">
+                    <div class="label">狀態</div>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="graduate" checked>
+                        <span>畢業</span>
+                    </label>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="ungraduate">
+                        <span>肄業</span>
+                    </label>
+                    <label>
+                        <input class ="answer" type="radio" name="status" value="onschool">
+                        <span>在學中</span>
+                    </label>
+                </div>
+                <div class="question-group">
+                    <div class="label">學業成績</div>
+                    <select class="answer combobox flex-row-item" name="system"></select>
+                    <input class="answer textbox" type="text" name="score" placeholder="成績">
+                </div>
+                <div class="question-group">
+                    <div class="label">排名</div>
+                    <select class="answer combobox" name="rank"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">學科表現</div>
+                    <select class="answer combobox" name="performance"></select>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>
+        </section>
+        <section id="extracurricular">
+            <div class="topic-column">
+                <span class="label">課外活動</span>
+                <span class="button js-change">+新增</span>
+            </div>
+            <div class="display-column">
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">活動總類</div>
+                    <select class="answer combobox" name="type"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">活動項目</div>
+                    <select class="answer combobox" name="item"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">持續時間</div>
+                    <input class="answer textbox" type="text" name="period">
+                </div>
+                <div class="question-group">
+                    <div class="label">擔任角色</div>
+                    <select class="answer combobox" name="role"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">活動強度</div>
+                    <select class="answer combobox" name="rank"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">獲獎認證</div>
+                    <select class="answer combobox" name="award"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">活動心得</div>
+                    <textarea class="answer textbox" name="experience" rows="10"></textarea>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>  
+        </section>
+        <section id="exam">
+            <div class="topic-column">
+                <span class="label">檢測成績</span>
+                <span class="button js-change">+新增</span>
+            </div>
+            <div class="display-column">
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">檢測種類</div>
+                    <select class="answer combobox" name="type"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">檢測項目</div>
+                    <select class="answer combobox" name="item"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">檢測科目</div>
+                    <select class="answer combobox" name="subject"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">檢測成績</div>
+                    <input class="answer textbox" type="text" name="score">
+                </div>
+                <div class="question-group">
+                    <div class="label">準備心得</div>
+                    <textarea class="answer textbox" name="experience" rows="10"></textarea>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>  
+        </section>
+        <section id="essay">
+            <div class="topic-column">
+                <span class="label">論文自傳</span>
+                <span class="button js-change">+新增</span>
+            </div>
+            <div class="display-column">
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">上傳內容</div>
+                    <label>
+                        <input class="answer" type="file" data-target="file-uploader"  name="file">
+                    </label>
+                </div>
+                <div class="question-group">
+                    <div class="label">簡單介紹</div>
+                    <textarea class="answer textbox" name="introduce" rows="10"></textarea>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>  
+        </section>
+    </section>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/dropdown.js"></script>
+</body>
+</html>

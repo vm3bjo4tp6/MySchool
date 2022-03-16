@@ -34,7 +34,9 @@ function DropDown(){
 }
 function ChangeDisplay(){
     let topic = FindNearleastElementWithID(this);
-    topic.querySelector(".display-column").classList.toggle("hide");
+    console.log(topic);
+    if(topic.id != "basic")
+        topic.querySelector(".display-column").classList.toggle("hide");
     topic.querySelector(".modify-column").classList.toggle("hide");
 }
 function SaveData(){
