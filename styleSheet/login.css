@@ -1,0 +1,67 @@
+body{
+    background-image: url("../resource/paper_w.jpg");
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.form .container{
+    min-width: 300px;
+    max-width: 600px;
+}
+.form h3{
+    font-size: 1.8rem;
+}
+.form .textbox{
+    margin: .3rem 0;
+    padding: .7rem .5rem;
+    border: 1px solid #c7e4ec;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.12rem;
+}
+.form .checkbox{
+    font-size: 1.2rem;
+}
+.form .btn-group{
+    display: flex;
+}
+.form .button{
+    margin: .3rem 0;
+    padding: .8rem;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: linear-gradient( to right, #fcff47 5%, #c29b1a 60%);
+}
+.form .form_other{
+    color: blue;
+}
+.form .form_otherfunction{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+@media(max-width: 767.88px){
+    .form .container{
+        margin: auto;
+        width: 95%;
+    }
+}
+@media(min-width: 767.89px) and (max-width: 1199.88px){
+    .form .container{
+        padding: 5rem;
+        border: 10px solid white;
+        border-radius: 20px;
+    }
+}
+@media(min-width: 1199.89px){
+    .form .container{
+        padding: 5rem;
+        border: 10px solid white;
+        border-radius: 20px;
+    }
+}
+
