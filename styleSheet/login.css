@@ -24,6 +24,10 @@ body{
 .form .checkbox{
     font-size: 1.2rem;
 }
+.form .inform{
+    min-height: .8rem;
+    color: #f31010;
+}
 .form .btn-group{
     display: flex;
 }

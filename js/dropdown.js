@@ -62,6 +62,9 @@ let BindingEvent = function(){
     });
     document.querySelectorAll(".js-save").forEach(button => {
         button.addEventListener("click", SaveData);
+    });
+    document.querySelectorAll(".js-submit").forEach(button => {
+        button.addEventListener("click", Submit);
     })
 }();
 let InitializeComboBox = function(){
@@ -95,14 +98,6 @@ function ChangeDisplay(){
         topic.querySelector(".display-column").classList.toggle("hide");
     topic.querySelector(".modify-column").classList.toggle("hide");
 }
-function ValidRegister(){
-    let rule = /@/;
-    let validItem = document.querySelector("#username");
-    let isOk = rule.test(validItem.value);
-    console.log(isOk);
-    return false;
-
-}
 function SaveData(){
     let topicElement = FindNearleastElementWithID(this);
     let answers = topicElement.querySelectorAll(".answer");
@@ -115,6 +110,27 @@ function SaveData(){
     }
     TryAdd(topicElement.id, saveObject);
 }
+function Submit(){
+    let id = FindNearleastElementWithID(this).id;
+    if(CheckFormCollect(id)){
+
+    }
+}
+function CheckFormCollect(id){
+    let errorMessage = "";
+    let imformElement = document.querySelector(".form .inform");
+    switch(id){
+        case "register":
+            if(errorMessage = CheckAccount())
+                break;
+            else if(errorMessage = CheckPassword())
+                break;
+            else if(errorMessage = CheckRepeatPassword())
+                break;
+    }
+    imformElement.innerHTML = errorMessage;
+}
+
 
 
 function FindNearleastElementWithID(element){
@@ -134,4 +150,24 @@ function TryAdd(topic, data){
         personalImformationDictionary[topic].push(data);
     else
         personalImformationDictionary[topic] = new Array(data);
+}
+
+
+
+function CheckAccount(){
+    let rule = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    let validItem = document.querySelector("#username");
+    let isOk = rule.test(validItem.value);
+    return isOk ? "" : "帳號不符合規定";
+}
+function CheckPassword(){
+    let password = document.getElementById("password").value;
+    let rule = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,12}$/
+    let isOk = rule.test(password);
+    return isOk ? "" : "密碼不符合規則";
+}
+function CheckRepeatPassword(){
+    let password = document.getElementById("password").value;
+    let rePassword = document.getElementById("repassword").value;
+    return password == rePassword ? "" : "密碼確認不相同";
 }
