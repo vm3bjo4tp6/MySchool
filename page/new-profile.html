@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleSheet/global.css">
+    <link rel="stylesheet" href="../styleSheet/new-pfofile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="question">
+                <span>申請學校</span>
+                <input type="text" class="answer">
+            </div>
+            <div class="question">
+                <span>申請科系</span>
+                <input type="text" class="answer">
+            </div>
+            <div class="question">
+                <span>錄取狀態</span>
+                <select class="answer combobox js-onChange" name="admission" id="admission">
+                    <option value="" selected disabled></option>
+                </select>
+            </div>
+            <div class="hide js-hide-admission">
+                <div class="question">
+                    <span>前往就讀</span>
+                    <div class="rb-group">
+                        <label>
+                            <input class="js-onChange" type="radio" name="study" value="yes">
+                            是
+                        </label>
+                        <label>
+                            <input class="js-onChange" type="radio" name="study" value="no" checked>
+                            否
+                        </label>
+                    </div>
+                </div>
+                <div class="hide js-hide-study">
+                    <div class="question">
+                        <span>上傳證明</span>
+                        <input type="file" id="fileUploader" class="js-uplodefile"/>
+                        <label id="upload_zone" class="upload_zone" for="fileUploader">請將要上傳的圖片拖曳至此</label>
+                    </div>
+                    <div class="question">
+                        <span>是否填入學科資料</span>
+                        <div class="rb-group">
+                            <label>
+                                <input class="js-onChange" type="radio" name="subject" value="yes">
+                                是
+                            </label>
+                            <label>
+                                <input class="js-onChange" type="radio" name="subject" value="no" checked>
+                                否
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hide js-hide-subject">
+                        <div class="question">
+                            <span>在校成績</span>
+                            <input type="text">
+                        </div>
+                        <div class="question">
+                            <span>在校排名</span>
+                            <input type="text">
+                        </div>
+                        <div class="question">
+                            <span>學科表現</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="question">
+                        <span>是否填入課外活動資料</span>
+                        <div class="rb-group">
+                            <label>
+                                <input class="js-onChange" type="radio" name="extracurricular " value="yes">
+                                是
+                            </label>
+                            <label>
+                                <input class="js-onChange" type="radio" name="extracurricular " value="no" checked>
+                                否
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hide js-hide-extracurricular">
+                        <div class="table">
+                            <div class="title">
+                                <div>活動名稱</div>
+                                <div>擔任職位</div>
+                                <div>活動規模</div>
+                                <div>開始時間</div>
+                                <div>持續時間</div>
+                                <div>獲得獎項</div>
+                            </div>
+                            <div class="js-add-row">+新增</div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <span>是否有其他資料</span>
+                        <div class="rb-group">
+                            <label>
+                                <input class="js-onChange" type="radio" name="other " value="yes">
+                                是
+                            </label>
+                            <label>
+                                <input class="js-onChange" type="radio" name="other " value="no" checked>
+                                否
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hide js-hide-other">
+                        <div class="question">
+                            <span>其他資料</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>     
+    </div>
+    <script src="../js/new-profile.js"></script>
+</body>
+</html>

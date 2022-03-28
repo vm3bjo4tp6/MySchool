@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleSheet/global.css">
+    <link rel="stylesheet" href="../styleSheet/nav.css">
+    <link rel="stylesheet" href="../styleSheet/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>註冊</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="HomePage.html">邁思庫</a>
+            </div>
+            <div class="nav">
+                <ul id="main-nav">
+                    <li class="js-dropdown">
+                        <a href="#">申請檔案</a>      
+                        <ul>
+                            <li><a href="#">搜尋</a></li>
+                            <li><a href="#">分類</a></li>
+                            <li><a href="#">分析</a></li>
+                            <li><a href="#">自傳</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">開通權限</a>
+                    </li>
+                    <li>
+                        <a href="#">常見問題</a>
+                    </li>
+                    <li class="js-dropdown">
+                        <a href="#">線上服務</a>
+                        <ul>
+                            <li>
+                                <a href="#">在校生指導</a>
+                            </li>
+                            <li>
+                                <a href="#">專業顧問</a>
+                            </li>
+                            <li>
+                                <a href="#">線上教學</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="js-dropdown">
+                        <a href="#">其他服務</a>
+                        <ul>
+                            <li>
+                                <a href="#">關於我們</a>
+                            </li>
+                            <li>
+                                <a href="#">優勢</a>
+                            </li>
+                            <li>
+                                <a href="#">相關新聞</a>
+                            </li>
+                            <li>
+                                <a href="#">其他資源</a>
+                            </li>
+                            <li>
+                                <a href="#">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="login-invisible1" id="user-nav">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-folder"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Profile.html">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-invisible login-button button">
+                <div class="container">
+                    <span>
+                        <a href="Login.html">註冊 | 登入</a>
+                    </span>
+                </div>
+            </div>
+            <div class="toggle js-dropdown">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="form">
+        <div class="container">        
+            <h3>會員登入</h3>
+            <form action="" class="login_item">
+                <input class="textbox" type="text" id="username" name="username" placeholder="帳號" required autocomplete="off">
+                <input class="textbox" type="password" id="password" name="password" placeholder="密碼" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="save" name="save" value="remeber_login">
+                    <label for="save"> 保持登入</label>
+                </div>
+                <div class="btn-group">
+                    <input class="button" type="submit" value="登入" class="submit button" onclick="checkLogIN();">
+                </div>
+                <div class="form_otherfunction">
+                    <a class="form_other" href="">忘記密碼?</a>
+                    <a class="form_other" href="../page/Register.html">註冊帳號</a>  
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="../js/dropdown.js"></script>
+</body>
+</html>
