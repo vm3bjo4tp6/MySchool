@@ -3,60 +3,58 @@
     justify-content: center;
 }
 .form .container{
-    border: 3rem;
-    padding: 5rem;
-    /* border: 2px solid #b6b6b6; */
+    padding: 4rem 0 10rem;
     min-width: 500px;
-    /* box-shadow: 10px 10px 5px #d3d3d3; */
 }
 .form .question{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem 0;
+    margin-bottom: 8rem;
+    font-size: 1.6rem;
 }
 .form .question span{
-    margin: 1rem 0;
-    font-size: 1.6rem;
+    margin-bottom: 2rem;
     color: #696969;
 }
-.form .question .answer{
-    margin: 1rem 0;
-    font-size: 1.6rem;
+form .question .rb-group{
+    display: flex;
+    width: 100%;
+}
+.form .rb-group label{
+    flex-grow: 1;
+    margin: 0 6rem;
 }
 .form .question .upload_zone {
     width: 400px;
     height: 400px;
     margin: 20px;
     padding: 10px;
-    border: 10px solid #696969;
+    border: 5px solid #696969;
     border-radius: 20px;
     cursor: pointer;
 }
-.form .question .upload_zone_enter {
-    border: 10px dashed black;
-    background-clip: content-box;
-}
-.preview_image {
-    width: 200px;
-    height: 200px;
-}
-.form .rb-group{
+
+.table{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    border: 1px solid #696969;
 }
-.form .rb-group label{
+.table .title{
     display: flex;
-    align-items: center;
-    flex-grow: 1;
-    margin: 0 6rem;
+    justify-content: space-around;
+    border-bottom: 1px solid #696969;
+    padding: .2rem .4rem;
+    background-color: #abd8d6;
 }
-.form .rb-group input{
-    margin-right: .4rem;
+.table .row{
+    display: flex;
+    justify-content: space-around;
+    padding: .2rem .4rem;
 }
-.form .rb-group span{
-    flex-grow: 1;
-    text-align: start;
+.table .js-add-row{
+    order: 100;
+    padding: .2rem .4rem;
 }
 
 input[type="text"], select{
@@ -64,12 +62,12 @@ input[type="text"], select{
     border: none;
     border-bottom: 1px solid #b6b6b6;
     text-align: center;
+    font-size: 1.6rem;
     outline: none;
 }
 input[type="file"]{
     display: none;
 }
-
 .hide{
     display: none;
 }
