@@ -57,7 +57,7 @@ let BindingEvent = function(){
     document.querySelectorAll(".js-dropdown").forEach(button => {
         button.addEventListener("click",DropDown);
     });
-    document.querySelectorAll(".js-change").forEach(button => {
+    document.querySelectorAll(".js-change-display-column").forEach(button => {
         button.addEventListener("click", ChangeDisplay);
     });
     document.querySelectorAll(".js-save").forEach(button => {
@@ -150,6 +150,8 @@ function TryAdd(topic, data){
         personalImformationDictionary[topic].push(data);
     else
         personalImformationDictionary[topic] = new Array(data);
+    
+    console.log(personalImformationDictionary);
 }
 
 

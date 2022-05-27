@@ -13,8 +13,9 @@
     display: flex;
     align-items: center;
     padding: .5rem 3rem;
+    border-bottom: 1px solid #dbdbdb;
     font-weight: 600;
-    background-color: #dbdbdb;
+    background-color: #f1f1f1;
     overflow: hidden;
 }
 .chart .topic-column .label{
@@ -25,60 +26,8 @@
     font-size: 1.2rem;
     color: #636363;
 }
-/* 展示 */
-/* #basic .display-column{
-    position: relative;
-}
-#basic .display-column .background{
-    background-color: #ffb326;
-    width: 100%;
-    height: 12rem;
-}
-#basic .display-column .imformation{
-    position: absolute;
-    top: 6rem;
-    display: flex;
-    padding: 0 3rem;
-}
-#basic .modify-column{
-    margin-top: 6em;
-    border-top: 1px solid #ff9203;
-}
-#basic .dropdown-column{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 6rem;
-    color: #838282;
-}
-#basic .pic{
-    margin-right: 1rem;
-    width: 10rem;
-    height: 10rem;
-}
-#basic .pic img{
-    width: inherit;
-    height: inherit;
-    vertical-align: middle;
-    border: 6px solid white;
-    border-radius: 100%;
-}
-#basic .txt{
-    flex-grow: 1;
-}
-#basic .txt .main{
-    display: flex;
-    align-items: flex-end;
-    height: 6rem;
-    font-size: 2.4rem;
-    font-weight: 600;
-    color: #ffffff;
-}
-#basic .txt .sub{
-    font-size: 1.2rem;
-    font-weight: 600;
-} */
 
+/* 顯示 */
 #basic .display-column .pic{    
     width: 10rem;
     height: 10rem;
@@ -89,6 +38,9 @@
 }
 .display-column .item + .item{
     border-top: 2px solid #cecbcb;
+}
+.display-column .item:nth-child(even){
+    background-color: #e8f1f3;
 }
 .item .pic{
     width: 8rem;

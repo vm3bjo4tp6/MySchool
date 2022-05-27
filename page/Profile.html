@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="container">
             <div class="logo">
                 <a href="HomePage.html">邁思庫</a>
@@ -102,7 +102,7 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- <section class="fix-center-window hide">
         <div class="container">
             <div class="display-block tag-board">
@@ -189,54 +189,45 @@
                     <span class="button js-save">儲存</span>
                 </div>
             </div>
-            <div class="dropdown-column js-change">
+            <div class="dropdown-column js-change-display">
                 詳細各人訊息
             </div>
         </section>
-        <section id="education">
+        <section id="application">
             <div class="topic-column">
-                <span class="label">學歷</span>
-                <span class="button js-change">+新增</span>
+                <span class="label">申請學校</span>
+                <span class="button js-change-display-column">+新增</span>
             </div>
             <div class="display-column">
-                <div class="item">
-                    <div class="pic">
-                        <img src="http://picsum.photos/200/200?random=20">
-                    </div>
-                    <div class="txt">
-                        <div class="main">
-                            <span>台灣大學</span>
-                            <span>電機系</span>
-                            <span>畢業</span>
-                        </div>
-                        <div class="sub">
-                            <span>2012/9~2016/6</span>
-                        </div>
-                    </div>
-                    <div class="other">
-                        <div class="">GPA</div>
-                        <div class="">4.0</div>
-                    </div>
+            </div>
+            <div class="modify-column hide">
+                <div class="question-group">
+                    <div class="label">學校名稱</div>
+                    <select class="answer combobox" name="school"></select>
                 </div>
-                <div class="item">
-                    <div class="pic">
-                        <img src="http://picsum.photos/200/200?random=20">
-                    </div>
-                    <div class="txt">
-                        <div>
-                            <span>台灣大學</span>
-                            <span>電機系</span>
-                            <span>畢業</span>
-                        </div>
-                        <div>
-                            <span>2012/9~2016/6</span>
-                        </div>
-                    </div>
-                    <div class="ritght">
-                        <div class="">GPA</div>
-                        <div class="">4.0</div>
-                    </div>
+                <div class="question-group">
+                    <div class="label">科系</div>
+                    <select class="answer combobox" name="subject"></select>
                 </div>
+                <div class="question-group">
+                    <div class="label">申請結果</div>
+                    <select class="answer combobox" name="result"></select>
+                </div>
+                <div class="question-group">
+                    <div class="label">有相關親戚</div>
+                    <select class="answer combobox" name="relationship"></select>
+                </div>
+                <div class="btn-group">
+                    <span class="button js-save">儲存</span>
+                </div>
+            </div>  
+        </section>
+        <section id="education">
+            <div class="topic-column">
+                <span class="label">在校成績</span>
+                <span class="button js-change-display-column">+新增</span>
+            </div>
+            <div class="display-column">
             </div>
             <div class="modify-column hide">
                 <div class="question-group">
@@ -261,15 +252,15 @@
                 <div class="question-group">
                     <div class="label">狀態</div>
                     <label>
-                        <input class ="answer" type="radio" name="status" value="graduate" checked>
+                        <input class ="answer" type="radio" name="status" value="畢業" checked>
                         <span>畢業</span>
                     </label>
                     <label>
-                        <input class ="answer" type="radio" name="status" value="ungraduate">
+                        <input class ="answer" type="radio" name="status" value="肄業">
                         <span>肄業</span>
                     </label>
                     <label>
-                        <input class ="answer" type="radio" name="status" value="onschool">
+                        <input class ="answer" type="radio" name="status" value="在學中">
                         <span>在學中</span>
                     </label>
                 </div>
@@ -294,7 +285,7 @@
         <section id="extracurricular">
             <div class="topic-column">
                 <span class="label">課外活動</span>
-                <span class="button js-change">+新增</span>
+                <span class="button js-change-display-column">+新增</span>
             </div>
             <div class="display-column">
             </div>
@@ -335,7 +326,7 @@
         <section id="exam">
             <div class="topic-column">
                 <span class="label">檢測成績</span>
-                <span class="button js-change">+新增</span>
+                <span class="button js-change-display-column">+新增</span>
             </div>
             <div class="display-column">
             </div>
@@ -368,7 +359,7 @@
         <section id="essay">
             <div class="topic-column">
                 <span class="label">論文自傳</span>
-                <span class="button js-change">+新增</span>
+                <span class="button js-change-display-column">+新增</span>
             </div>
             <div class="display-column">
             </div>
@@ -378,6 +369,10 @@
                     <label>
                         <input class="answer" type="file" data-target="file-uploader"  name="file">
                     </label>
+                </div>
+                <div class="question-group">
+                    <div class="label">標題</div>
+                    <input class ="answer textbox" type="text" name="title">
                 </div>
                 <div class="question-group">
                     <div class="label">簡單介紹</div>
@@ -390,7 +385,8 @@
         </section>
     </section>
 
+    <script src="../js/profile.js"></script>
     <script src="../js/data.js"></script>
-    <script src="../js/dropdown.js"></script>
+    <!-- <script src="../js/dropdown.js"></script> -->
 </body>
 </html>

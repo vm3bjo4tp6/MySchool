@@ -3,58 +3,60 @@
     justify-content: center;
 }
 .form .container{
-    padding: 4rem 0 10rem;
+    border: 3rem;
+    padding: 5rem;
+    /* border: 2px solid #b6b6b6; */
     min-width: 500px;
+    /* box-shadow: 10px 10px 5px #d3d3d3; */
 }
 .form .question{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 8rem;
-    font-size: 1.6rem;
+    margin: 1rem 0;
 }
 .form .question span{
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
     color: #696969;
 }
-form .question .rb-group{
-    display: flex;
-    width: 100%;
-}
-.form .rb-group label{
-    flex-grow: 1;
-    margin: 0 6rem;
+.form .question .answer{
+    margin: 1rem 0;
+    font-size: 1.6rem;
 }
 .form .question .upload_zone {
     width: 400px;
     height: 400px;
     margin: 20px;
     padding: 10px;
-    border: 5px solid #696969;
+    border: 10px solid #696969;
     border-radius: 20px;
     cursor: pointer;
 }
-
-.table{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #696969;
+.form .question .upload_zone_enter {
+    border: 10px dashed black;
+    background-clip: content-box;
 }
-.table .title{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #696969;
-    padding: .2rem .4rem;
-    background-color: #abd8d6;
+.preview_image {
+    width: 200px;
+    height: 200px;
 }
-.table .row{
+.form .rb-group{
     display: flex;
-    justify-content: space-around;
-    padding: .2rem .4rem;
+    width: 100%;
 }
-.table .js-add-row{
-    order: 100;
-    padding: .2rem .4rem;
+.form .rb-group label{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 6rem;
+}
+.form .rb-group input{
+    margin-right: .4rem;
+}
+.form .rb-group span{
+    flex-grow: 1;
+    text-align: start;
 }
 
 input[type="text"], select{
@@ -62,12 +64,12 @@ input[type="text"], select{
     border: none;
     border-bottom: 1px solid #b6b6b6;
     text-align: center;
-    font-size: 1.6rem;
     outline: none;
 }
 input[type="file"]{
     display: none;
 }
+
 .hide{
     display: none;
 }
